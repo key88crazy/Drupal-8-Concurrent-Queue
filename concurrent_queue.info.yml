@@ -1,0 +1,4 @@
+name: Concurrent Queue
+description: "Processes drupal queues concurrently for improved performance."
+type: module
+core: 8.x

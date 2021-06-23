@@ -1,0 +1,8 @@
+services:
+  concurrent_queue.commands:
+    class: \Drupal\concurrent_queue\Commands\ConcurrentQueueCommands
+    arguments:
+      - '@plugin.manager.queue_worker'
+      - '@queue'
+    tags:
+      - { name: drush.command }
